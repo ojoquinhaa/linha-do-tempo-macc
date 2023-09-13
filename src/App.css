@@ -1,5 +1,62 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
 
 body {
-  font-family: "Merriweather", serif;
+  font-family: "Poppins", Sans-serif;
+}
+
+@keyframes initial-animation {
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes main {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.initial-animation {
+  transform: translateY(40vh);
+  animation: initial-animation 1s forwards;
+  animation-delay: 2s;
+}
+
+.logo-animation {
+  opacity: 0;
+  animation: fade 1s forwards;
+  animation-delay: 3s;
+}
+
+.main-animation {
+  opacity: 0;
+  animation: main 2s forwards;
+  animation-delay: 4s;
+}
+
+#slider {
+  border-radius: 30px;
+}
+
+.topic {
+  transition: 1s;
+  min-width: 100%;
+}
+
+.img-limit {
+  height: 200px;
 }
