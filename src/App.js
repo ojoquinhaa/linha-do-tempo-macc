@@ -85,7 +85,7 @@ function App() {
         >
           <div className="flex flex-start overflow-x-hidden flex-nowrap w-full overflow-y-hidden">
             <div className="topic w-full h-full p-1">
-              <h1 className="text-xl mb-1 text-center">MACC 2023 - 1° ano A</h1>
+              <h1 className="text-xl mb-1 text-center">MACC 2023 - 1° ano</h1>
               <p className="mb-3 text-justify">
                 Bem-vindo à Linha do Tempo dos Direitos Humanos da nossa sala!
                 Utilize as setas horizontais para navegar ao longo da cronologia
