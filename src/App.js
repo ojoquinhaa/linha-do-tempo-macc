@@ -3,6 +3,7 @@ import "./App.css";
 import Topic from "./components/Topic";
 import logo from "./img/mais_anima.png";
 
+import us from "./img/us.jpeg";
 import hamurabi from "./img/hamurabi.jpg";
 import ciro from "./img/cilindro.png";
 import magna from "./img/carta_magna.png";
@@ -82,7 +83,30 @@ function App() {
           className="w-5/6 h-full bg-white mt-2 p-3 text-slate-600 overflow-x-hidden overflow-y-auto"
           id="slider"
         >
-          <div className="flex flex-start overflow-x-hidden flex-nowrap w-full overflow-y-auto">
+          <div className="flex flex-start overflow-x-hidden flex-nowrap w-full overflow-y-hidden">
+            <div className="topic w-full h-full p-1">
+              <h1 className="text-xl mb-1 text-center">MACC 2023 - 1° ano A</h1>
+              <p className="mb-3 text-justify">
+                Bem-vindo à Linha do Tempo dos Direitos Humanos da nossa sala!
+                Utilize as setas horizontais para navegar ao longo da cronologia
+                e compreender um pouco mais sobre a história dos direitos
+                humanos.
+              </p>
+              <p className="text-center text-base mb-2">
+                Feita por:{" "}
+                <span className="text-black">João Luiz Prado Neiva</span>
+              </p>
+              <p className="text-center text-base mb-2">
+                Professoras Orientadoras:{" "}
+                <span className="text-black">
+                  Adriana Borges e Bruna Venceslau
+                </span>
+              </p>
+              <div className="w-full">
+                <img src={us} alt="Sala" />
+              </div>
+            </div>
+
             {/* Codigo de Hamurabi */}
             <Topic
               title="O Código de Hamurabi"
@@ -179,6 +203,41 @@ function App() {
               title="A Primeira Conferência de Paz de Haia"
               description="A Primeira Conferência de Paz de Haia, realizada em 1899, foi um evento significativo que marcou o início dos esforços internacionais para prevenir conflitos armados e promover a paz. Esta conferência reuniu representantes de várias nações com o objetivo de discutir questões relacionadas à arbitragem, à limitação de armamentos e ao estabelecimento de procedimentos para a resolução pacífica de disputas entre os estados. A iniciativa da Primeira Conferência de Paz de Haia foi motivada pelo desejo de evitar os horrores da guerra e promover a cooperação internacional. Embora não tenha conseguido evitar a eclosão da Primeira Guerra Mundial alguns anos depois, a conferência lançou as bases para futuros esforços diplomáticos e tratados internacionais que visam à prevenção de conflitos armados e à manutenção da paz."
               img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkE1qL65cEF9ndJiO4-tx9W-TrLbdWmNhMnQ&usqp=CAU"
+            />
+
+            {/* Declaração Universal dos Direitos da Criança (1924) */}
+            <Topic
+              title="Declaração Universal dos Direitos da Criança (1924)"
+              description="Este foi o primeiro tratado internacional dedicado à proteção dos direitos das crianças. Embora tenha sido substituído posteriormente pela Convenção sobre os Direitos da Criança em 1989, esse marco inicial estabeleceu princípios fundamentais para a proteção e bem-estar das crianças em todo o mundo, reconhecendo sua dignidade e necessidade de cuidados especiais. A Declaração enfatizou a importância da educação, alimentação adequada e proteção contra exploração e abuso, estabelecendo as bases para futuras leis e acordos internacionais em prol dos direitos das crianças."
+              img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6JK--KJV9z7p0diVdW8AIcUlDggU2kU9w1A&usqp=CAU"
+            />
+
+            {/* Aprovação da 19ª Emenda nos EUA (1920) */}
+            <Topic
+              title="Aprovação da 19ª Emenda nos EUA (1920)"
+              description="A 19ª Emenda à Constituição dos Estados Unidos foi um marco histórico que garantiu o direito de voto às mulheres. Esta emenda foi uma conquista significativa no movimento sufragista, permitindo que as mulheres participassem plenamente da democracia. Ela representou um avanço importante na busca pela igualdade de gênero e o reconhecimento dos direitos das mulheres como cidadãs com direito ao voto e à participação política, abrindo caminho para futuras lutas pelos direitos das mulheres em todo o mundo."
+              img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPOWoMqlTot_S4DlpBZ4QHAn0MgKU4RwscjA&usqp=CAU"
+            />
+
+            {/* Carta das Nações Unidas (1945) */}
+            <Topic
+              title="Carta das Nações Unidas (1945)"
+              description="A Carta das Nações Unidas é um documento fundamental que estabeleceu a Organização das Nações Unidas (ONU) e promoveu a cooperação internacional após a Segunda Guerra Mundial. Ela foi criada com o objetivo de manter a paz e segurança globais, promover a cooperação entre as nações, resolver conflitos por meios pacíficos e promover o respeito pelos direitos humanos. A Carta das Nações Unidas definiu os princípios e valores centrais da ONU, tornando-se um alicerce essencial para a diplomacia internacional e a promoção da paz e dos direitos humanos em todo o mundo."
+              img="https://e4k4c4x9.rocketcdn.me/en/wp-content/uploads/sites/15/2020/12/logo-EN-UN.png"
+            />
+
+            {/* Declaração Universal dos Direitos Humanos (1948) */}
+            <Topic
+              title="Declaração Universal dos Direitos Humanos (1948)"
+              description="Este documento é fundamental para os direitos humanos em escala global, delineando os direitos básicos que todas as pessoas devem desfrutar, independentemente de sua origem, raça, religião, gênero ou outras características. A Declaração Universal dos Direitos Humanos foi adotada pelas Nações Unidas e estabelece os princípios essenciais da dignidade humana, liberdade, igualdade, não discriminação e justiça. Ela serve como um guia moral e legal para governos e sociedades, promovendo a paz, a justiça e o respeito pelos direitos fundamentais em todo o mundo."
+              img="https://static.wixstatic.com/media/6ae90a_26aa8492898b43aeae5fb8d0f3d3e924~mv2.png/v1/fill/w_392,h_392,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Image-empty-state.png"
+            />
+
+            {/* Convenção para Prevenir e Punir o Genocídio (1948) */}
+            <Topic
+              title="Convenção para Prevenir e Punir o Genocídio (1948)"
+              description="Esta convenção internacional é um marco crucial na história dos direitos humanos, pois definiu e proibiu o genocídio como um crime internacional. A Convenção estabeleceu a obrigação dos Estados de prevenir e punir atos de genocídio, que envolvem a intenção de destruir, total ou parcialmente, um grupo étnico, religioso, racial ou nacional. Ela desempenhou um papel fundamental na conscientização e na responsabilização por atrocidades em massa, ajudando a garantir que aqueles que cometem genocídio sejam levados à justiça e que a humanidade trabalhe para prevenir futuras tragédias semelhantes."
+              img="https://wjc-dev.imgix.net/about-holocaust/assets/2s3GFs1S/1280px-srebrenica_massacre_memorial_gravestones_2009_1-768x456.jpg?auto=format&fit=crop&fm=jpg&h=480&lossless=true&q=60&w=750"
             />
           </div>
         </section>
